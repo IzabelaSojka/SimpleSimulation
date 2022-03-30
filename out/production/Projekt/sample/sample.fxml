@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="659.0" prefWidth="862.0" style="-fx-background-color: LIGHTGREEN;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Rectangle fx:id="kwadrat11" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="35.0" layoutX="114.0" layoutY="378.0" stroke="BLACK" strokeType="INSIDE" width="37.0" />
+      <ImageView fitHeight="110.0" fitWidth="107.0" layoutX="438.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../obrazki/stanowisko.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="110.0" fitWidth="107.0" layoutX="437.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../obrazki/stanowisko.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="110.0" fitWidth="107.0" layoutX="635.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../obrazki/stanowisko.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="125.0" fitWidth="107.0" layoutX="635.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../obrazki/stanowisko.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="87.0" layoutY="222.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../obrazki/kasa.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="87.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../obrazki/kasa.png" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="kwadrat12" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="35.0" layoutX="114.0" layoutY="607.0" stroke="BLACK" strokeType="INSIDE" width="37.0" />
+      <Rectangle fx:id="kwadrat01" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="35.0" layoutX="472.0" layoutY="372.0" stroke="BLACK" strokeType="INSIDE" width="37.0" />
+      <Rectangle fx:id="kwadrat02" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="35.0" layoutX="670.0" layoutY="372.0" stroke="BLACK" strokeType="INSIDE" width="37.0" />
+      <Rectangle fx:id="kwadrat03" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="35.0" layoutX="472.0" layoutY="560.0" stroke="BLACK" strokeType="INSIDE" width="37.0" />
+      <Rectangle fx:id="kwadrat04" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="35.0" layoutX="670.0" layoutY="560.0" stroke="BLACK" strokeType="INSIDE" width="37.0" />
+      <Text layoutX="508.0" layoutY="632.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liczba samochodów na stacji:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Label fx:id="naStacji" layoutX="761.0" layoutY="607.0" prefHeight="35.0" prefWidth="57.0" text="0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Text layoutX="14.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stacja paliw: " wrappingWidth="145.50387573242188">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Label fx:id="komunikat" layoutX="159.0" layoutY="126.0" prefHeight="36.0" prefWidth="427.0" textFill="#fa0000">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Text layoutX="14.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Czeka na płacenie: " wrappingWidth="145.50387573242193">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="419.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Czeka na tankowanie:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="20.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liczba samochodów:">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="20.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maksymalna liczba samochodów na stacji:">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <TextField fx:id="liczba" layoutX="226.0" layoutY="10.0" prefHeight="36.0" prefWidth="78.0" />
+      <TextField fx:id="max" layoutX="426.0" layoutY="49.0" prefHeight="35.0" prefWidth="78.0" />
+      <Button layoutX="604.0" layoutY="25.0" mnemonicParsing="false" onAction="#Start" prefHeight="48.0" prefWidth="146.0" text="Uruchom" />
+      <Label fx:id="czekP" layoutX="155.0" layoutY="173.0" prefHeight="26.0" prefWidth="65.0" text="0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="czekT" layoutX="579.0" layoutY="173.0" prefHeight="26.0" prefWidth="65.0" text="0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Button layoutX="604.0" layoutY="84.0" mnemonicParsing="false" onAction="#zamknij" prefHeight="48.0" prefWidth="146.0" text="Wyłącz" />
+      <Label fx:id="kom11" layoutX="479.0" layoutY="375.0" prefHeight="30.0" prefWidth="37.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="kom12" layoutX="677.0" layoutY="375.0" prefHeight="30.0" prefWidth="37.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="kom13" layoutX="479.0" layoutY="563.0" prefHeight="30.0" prefWidth="37.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="kom14" layoutX="677.0" layoutY="563.0" prefHeight="30.0" prefWidth="37.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="kom2" layoutX="122.0" layoutY="610.0" prefHeight="30.0" prefWidth="37.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="kom1" layoutX="122.0" layoutY="381.0" prefHeight="30.0" prefWidth="37.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
